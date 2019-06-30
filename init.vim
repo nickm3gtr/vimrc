@@ -60,7 +60,10 @@ call plug#end()
 colorscheme gruvbox
 let g:AutoPairsFlyMode = 1
 
-
+"AIRLINE
+let g:airline_powerline_fonts = 1
+"
+"
 "MAXIMIZE GVIM
 if has("gui_running")
   " GUI is running or is about to start.
