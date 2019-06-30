@@ -9,10 +9,22 @@ set number
 set showcmd
 set lazyredraw
 set showmatch
+set smarttab
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 set guioptions=c
 set number relativenumber
+set nobackup
+set nowritebackup
+set encoding=utf-8
+set ruler
+set noshowmode
+set ignorecase
+set smartcase
+" Make Vim to handle long lines nicely.
+set wrap
+set textwidth=79
+set formatoptions=qrn1
 
 "omni completion
 filetype plugin on
