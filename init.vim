@@ -35,6 +35,14 @@ set omnifunc=syntaxcomplete#Complete
 let g:ale_javascript_eslint_executable = 'eslint'       
 "Nerdtree Toggle Mapping
 let g:ale_javascript_eslint_use_global=1
+"ALE prettier
+let g:ale_fixers = {
+            \    'javascript': ['prettier'],
+            \'css': ['prettier']
+            \}
+let g:ale_fix_on_save=1
+
+"NERDTree Toggle
 map <C-t> :NERDTreeToggle<CR>
 
 " Set this. Airline will handle the rest.
@@ -62,8 +70,8 @@ let g:AutoPairsFlyMode = 1
 
 "AIRLINE
 let g:airline_powerline_fonts = 1
-"
-"
+
+
 "MAXIMIZE GVIM
 if has("gui_running")
   " GUI is running or is about to start.
